@@ -21,7 +21,7 @@ player.addListener({
 
     onPlay() {
         console.log("Play");
-        document.getElementById("playBtn").textContent="U+23F8";
+        document.getElementById("playBtn").textContent="■";
     },
 
     onPause() {
