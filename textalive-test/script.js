@@ -31,6 +31,11 @@ player.addListener({
         console.log("Stop");
     }
 });
+if(!app.managed){
+    playBtn.addEventListener("click", () => {
+        player.video&&player.requestPlay();
+    })
+}
 
 function onAppReady(app) {
     
@@ -45,10 +50,5 @@ function onAppReady(app) {
                 lyricDiffId: 20654
             }
         });
-    }
-    if(!app.managed){
-        playBtn.addEventListener("click", () => {
-            player.video&&player.requestPlay();
-        })
     }
 }
