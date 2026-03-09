@@ -15,13 +15,13 @@ player.addListener({
     onAppReady(app) {
         console.log("AppReady:", app);
         // 動画を読み込む（VideoReady を発火させるため）
-        player.createFromSongUrl("https://piapro.jp/t/9u8J", {
+        player.createFromSongUrl("https://piapro.jp/t/ULcJ/20250205120202", {
             video: {
-                beatId: 3953909,
-                chordId: 3953908,
-                repetitiveSegmentId: 3953907,
-                lyricId: 3953906,
-                lyricDiffId: 3953905
+                beatId: 4694275,
+                chordId: 2830730,
+                repetitiveSegmentId: 2946478,
+                lyricId: 67810,
+                lyricDiffId: 20654
             }
         });
     },
