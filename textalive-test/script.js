@@ -5,8 +5,9 @@ const player = new TextAliveApp.Player({
 });
 
 console.log("Player created:", player);
+document.getElementById("playBtn").textContent="●";
 
-const playBtn = document.getElementById("playBtn").textContent="●";
+const playBtn = document.getElementById("playBtn");
 
 player.addListener({
 
@@ -35,7 +36,6 @@ player.addListener({
 });
 
 function onAppReady(app) {
-    
     console.log("AppReady:", app);
     if(!app.songUrl){
         player.createFromSongUrl("https://piapro.jp/t/ULcJ/20250205120202", {
