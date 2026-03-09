@@ -5,7 +5,6 @@ const player = new TextAliveApp.Player({
 });
 
 console.log("Player created:", player);
-document.getElementById("playBtn").textContent="●";
 
 const playBtn = document.getElementById("playBtn");
 
