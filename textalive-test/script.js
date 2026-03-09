@@ -1,7 +1,7 @@
 console.log("script.js loaded");
 
 // ★ ここにあなたの TextAlive トークンを入れる
-const TOKEN = "QKQcd51bNrtXGfDZ";
+const TOKEN = "ewld6nYLU4hAIKGi";
 
 // ★ Player をグローバルスコープで new（最重要）
 const player = new TextAliveApp.Player({
