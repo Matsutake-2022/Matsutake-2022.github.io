@@ -46,8 +46,8 @@ function onAppReady(app) {
                 lyricDiffId: 20654
             }
         });*/
-        player.createFromSongUrl("https://www.nicovideo.jp/watch/sm982882");
     }
+    player.createFromSongUrl("https://www.nicovideo.jp/watch/sm982882");
     if(!app.managed){
         playBtn.addEventListener("click", () => {
             player.video&&player.requestPlay();
