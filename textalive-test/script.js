@@ -31,14 +31,14 @@ player.addListener({
         console.log("Stop");
     }
 });
-if(!app.managed){
-    playBtn.addEventListener("click", () => {
-        player.video&&player.requestPlay();
-    })
-}
 
 function onAppReady(app) {
     
+    if(!app.managed){
+        playBtn.addEventListener("click", () => {
+            player.video&&player.requestPlay();
+        })
+    }
     console.log("AppReady:", app);
     if(!app.songUrl){
         player.createFromSongUrl("https://piapro.jp/t/ULcJ/20250205120202", {
