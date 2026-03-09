@@ -1,20 +1,16 @@
 console.log("script.js loaded");
 
-// ★ ここにあなたの TextAlive トークンを入れる
-const TOKEN = "ewld6nYLU4hAIKGi";
-
-// ★ Player をグローバルスコープで new（最重要）
 const player = new TextAliveApp.Player({
-    app: { token: TOKEN }
+    app: { token: "ewld6nYLU4hAIKGi" }
 });
 
 console.log("Player created:", player);
 
-// ★ listener をその場で定義（未定義関数を渡すと壊れる）
+const playBtn = document.getElementById("playBtn");
+
 player.addListener({
     onAppReady(app) {
         console.log("AppReady:", app);
-        // 動画を読み込む（VideoReady を発火させるため）
         player.createFromSongUrl("https://piapro.jp/t/ULcJ/20250205120202", {
             video: {
                 beatId: 4694275,
