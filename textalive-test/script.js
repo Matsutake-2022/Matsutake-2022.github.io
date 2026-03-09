@@ -36,7 +36,7 @@ player.addListener({
 
 function onAppReady(app) {
     console.log("AppReady:", app);
-    if(!app.songUrl){
+    if(!app.songUrl){/*
         player.createFromSongUrl("https://piapro.jp/t/ULcJ/20250205120202", {
             video: {
                 beatId: 4694275,
@@ -45,7 +45,8 @@ function onAppReady(app) {
                 lyricId: 67810,
                 lyricDiffId: 20654
             }
-        });
+        });*/
+        player.createFromSongUrl("https://www.nicovideo.jp/watch/sm982882");
     }
     if(!app.managed){
         playBtn.addEventListener("click", () => {
