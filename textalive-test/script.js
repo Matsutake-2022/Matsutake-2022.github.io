@@ -6,7 +6,7 @@ const player = new TextAliveApp.Player({
 
 console.log("Player created:", player);
 
-const playBtn = document.getElementById("playBtn");
+const playBtn = document.getElementById("playBtn").textContent="●";
 
 player.addListener({
 
